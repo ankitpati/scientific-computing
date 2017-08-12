@@ -25,3 +25,5 @@ legend('show');
 
 drawnow();
 input("Press enter key to terminate...");
+
+% end of sinplot.m

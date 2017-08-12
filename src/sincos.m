@@ -20,3 +20,5 @@ legend('show');
 
 drawnow();
 input("Press enter to terminate...");
+
+% end of sincos.m
