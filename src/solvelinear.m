@@ -17,6 +17,8 @@ results = [
 ];
 
 opts.TRANSA = false; % TRANSA is buggy in Octave 4.0.0
-linsolve(coeffs, results, opts)
+x = linsolve(coeffs, results, opts);
+
+printf("x = %.2f\ny = %.2f\nz = %.2f\n", x(1), x(2), x(3));
 
 % end of linsolve.m
