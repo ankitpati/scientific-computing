@@ -1,6 +1,6 @@
 #!/usr/bin/octave -q
 
-% linsolve.m
+% solvelinear.m
 % Date  : 12 August 2017
 % Author: Ankit Pati
 
@@ -29,4 +29,4 @@ disp("\nUsing inv...");
 x = inv(coeffs) * results;
 printf("x = %.2f\ny = %.2f\nz = %.2f\n", x(1), x(2), x(3));
 
-% end of linsolve.m
+% end of solvelinear.m
