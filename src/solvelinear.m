@@ -1,0 +1,22 @@
+#!/usr/bin/octave -q
+
+% linsolve.m
+% Date  : 12 August 2017
+% Author: Ankit Pati
+
+coeffs = [
+      2,   1,   1;
+     -1,   1,  -1;
+      1,   2,   3;
+];
+
+results = [
+      2;
+      3;
+    -10;
+];
+
+opts.TRANSA = false; % TRANSA is buggy in Octave 4.0.0
+linsolve(coeffs, results, opts)
+
+% end of linsolve.m
