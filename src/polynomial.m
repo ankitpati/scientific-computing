@@ -48,4 +48,18 @@ chr = poly(A);  % finds characteristic polynomial of A, which is, [1, -3, -2]
                 % that translates to s² - 3s -2
 disp("Characteristic Polynomial of A = "), disp(chr), disp("");
 
+X = [  2,   5,   7];
+Y = [ 24, 156, 384];
+N = 3;
+pft = polyfit(X, Y, N);
+disp("Polyfit for X and Y in N dimensions = "), disp(pft), disp("");
+
+Z = [4, 2, 3];  % Z(X) = 4X² + 2X + 3
+X = [
+    0, 1;
+    2, 3;
+];
+vlm = polyvalm(Z, X);
+disp("Z(X) at X = [0, 1; 2, 3] = "), disp(vlm), disp("");
+
 % end of polynomial.m
