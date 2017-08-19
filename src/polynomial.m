@@ -55,11 +55,11 @@ pft = polyfit(X, Y, N);
 disp("Polyfit for X and Y in N dimensions = "), disp(pft), disp("");
 
 Z = [4, 2, 3];  % Z(X) = 4X² + 2X + 3
-X = [
+X = [           % must be a square matrix
     0, 1;
     2, 3;
 ];
-vlm = polyvalm(Z, X);
+vlm = polyvalm(Z, X);   % substitutes square matrix X in polynomial Z
 disp("Z(X) at X = [0, 1; 2, 3] = "), disp(vlm), disp("");
 
 % end of polynomial.m
