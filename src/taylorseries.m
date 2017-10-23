@@ -18,18 +18,6 @@ function [fx expansion] = taylorseries(x, n)
     fx = 0;
     expansion = '';
 
-    % necessary because UTF-8 and arrays do not mix well
-    p0 = '⁰';
-    p1 = '¹';
-    p2 = '²';
-    p3 = '³';
-    p4 = '⁴';
-    p5 = '⁵';
-    p6 = '⁶';
-    p7 = '⁷';
-    p8 = '⁸';
-    p9 = '⁹';
-
     sig = 1;
 
     for i = 1 : 2 : 2.*n-1
@@ -53,25 +41,25 @@ function [fx expansion] = taylorseries(x, n)
         for digit = power
             switch digit
             case '0'
-                digit = p0;
+                digit = '⁰';
             case '1'
-                digit = p1;
+                digit = '¹';
             case '2'
-                digit = p2;
+                digit = '²';
             case '3'
-                digit = p3;
+                digit = '³';
             case '4'
-                digit = p4;
+                digit = '⁴';
             case '5'
-                digit = p5;
+                digit = '⁵';
             case '6'
-                digit = p6;
+                digit = '⁶';
             case '7'
-                digit = p7;
+                digit = '⁷';
             case '8'
-                digit = p8;
+                digit = '⁸';
             case '9'
-                digit = p9;
+                digit = '⁹';
             end
 
             p = strcat(p, digit);
