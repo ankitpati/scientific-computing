@@ -5,10 +5,10 @@
 % Author: Ankit Pati
 
 % input
-g = input("Gallons ? ");
-p = input("Pints   ? ");
+g = input('Gallons ? ');
+p = input('Pints   ? ');
 l = (g.*8 + p) / 1.76;
-printf("Liters  = %u\n", l);
+printf('Liters  = %u\n', l);
 %{
 Gallons ? 5
 Pints   ? 2
@@ -16,31 +16,31 @@ Liters  = 23.8636
 %}
 
 % menu
-colours = {"Red", "Green", "Blue", "Black"};
-choice = menu("Choose a Colour", colours);
+colours = {'Red', 'Green', 'Blue', 'Black'};
+choice = menu('Choose a Colour', colours);
 if choice != 0
-    printf("Chosen colour is %s.\n", colours{choice});
+    printf('Chosen colour is %s.\n', colours{choice});
 else
-    disp("No colour chosen.");
+    disp('No colour chosen.');
 end
 %{
 Chosen colour is Blue.
 %}
 
 % switch
-choice = input("Choose a Colour (Red, Green, Blue): ", "s");
+choice = input('Choose a Colour (Red, Green, Blue): ', 's');
 switch choice
-    case {"r" "R" "Red" "red" "RED"}
-        disp("Red colour is chosen.\n");
-    case {"g" "G" "Green" "green" "GREEN"}
-        disp("Green colour is chosen.\n");
-    case {"b" "B" "Blue" "blue" "BLUE"}
-        disp("Blue colour is chosen.\n");
-    case {"d" "D" "Done" "done" "DONE"}
-        disp("Done!");
+    case {'r' 'R' 'Red' 'red' 'RED'}
+        disp('Red colour is chosen.\n');
+    case {'g' 'G' 'Green' 'green' 'GREEN'}
+        disp('Green colour is chosen.\n');
+    case {'b' 'B' 'Blue' 'blue' 'BLUE'}
+        disp('Blue colour is chosen.\n');
+    case {'d' 'D' 'Done' 'done' 'DONE'}
+        disp('Done!');
         break;
     otherwise
-        error("Invalid Selection");
+        error('Invalid Selection');
 end
 %{
 Green colour is chosen.
@@ -51,9 +51,9 @@ a = 12;
 b =  4;
 x = a + b;
 y = a / b;
-keyboard("Inspect y; set y to ten> ");
+keyboard('Inspect y; set y to ten> ');
 z = a - y + 3;
-printf("Value of z is %d.\n", z);
+printf('Value of z is %d.\n', z);
 %{
 Value of z is 5.
 %}
@@ -68,13 +68,13 @@ disp(43500);
 % break
 sum = 0;
 for i = 1:10
-    num = input("Enter a number: ");
+    num = input('Enter a number: ');
     sum += num;
     if sum > 20
-        disp("Sum exceeded 20.\n");
+        disp('Sum exceeded 20.\n');
         break;
     end
-    disp(["Sum = " num2str(sum) "\n"]);
+    disp(['Sum = ' num2str(sum) '\n']);
 end
 %{
 Enter a number: 5
@@ -102,9 +102,9 @@ end
 
 
 % pause
-disp("hello");
+disp('hello');
 pause(3);
-disp("bye");
+disp('bye');
 %{
 hello
 (3 second delay)
@@ -114,13 +114,13 @@ bye
 % save
 num1 = 43;
 num2 = 5;
-save "my-save";
+save 'my-save';
 %{
 (no output)
 %}
 
 % load
-load "my-save";
+load 'my-save';
 disp(num1);
 disp(num2);
 %{

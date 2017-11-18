@@ -23,6 +23,6 @@ loglog  (x, y, 'linewidth', 2, '-y', 'DisplayName', 'logarithmic plot');
 legend('show');
 
 drawnow();
-input("Press enter to terminate...");
+input('Press enter to terminate...');
 
 % end of logplot.m

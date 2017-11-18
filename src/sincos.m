@@ -19,6 +19,6 @@ plot(x, cos(x), 'color', 'red',  'linewidth', 2, 'DisplayName', 'Cosine');
 legend('show');
 
 drawnow();
-input("Press enter to terminate...");
+input('Press enter to terminate...');
 
 % end of sincos.m

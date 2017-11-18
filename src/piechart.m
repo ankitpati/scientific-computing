@@ -11,6 +11,6 @@ expld = [  0,   1,   0,   1,   0];
 pie(marks, names, expld);
 
 drawnow();
-input("Press enter key to terminate...");
+input('Press enter key to terminate...');
 
 % end of piechart.m

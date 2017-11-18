@@ -21,9 +21,9 @@ plot(x, f_dash, 'color', 'red'  , 'linewidth', 2, 'DisplayName',
                                           '4 sin(x) cos(x) - 8 sin²(x) cos(x)');
 
 if f(9) == f_dash(9)
-    disp("The identity is verified to hold at x = 9 for sin 4x.");
+    disp('The identity is verified to hold at x = 9 for sin 4x.');
 else
-    disp("The identity is verified to be false for sin 4x.");
+    disp('The identity is verified to be false for sin 4x.');
 end
 
 g      = cos(2 .* x);
@@ -34,14 +34,14 @@ plot(x, g_dash, 'color', 'black', 'linewidth', 2, 'DisplayName',
                                                                '1 - 2 sin²(x)');
 
 if g(9) == g_dash(9)
-    disp("The identity is verified to hold at x = 9 for cos 2x.");
+    disp('The identity is verified to hold at x = 9 for cos 2x.');
 else
-    disp("The identity is verified to be false for cos 2x.");
+    disp('The identity is verified to be false for cos 2x.');
 end
 
 legend('show');
 
 drawnow();
-input("Press enter key to terminate...");
+input('Press enter key to terminate...');
 
 % end of trigverify.m

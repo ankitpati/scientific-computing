@@ -12,9 +12,9 @@ volume    = pi .* radius.^2 .* height;
 time2fill = volume / flowrate;
 
 if time2fill <= 120 % 120 min
-    disp("The tank overflows after 120 minutes.");
+    disp('The tank overflows after 120 minutes.');
 else
-    disp("The tank does not overflow after 120 minutes.");
+    disp('The tank does not overflow after 120 minutes.');
 end
 
 % end of chkoverflow.m

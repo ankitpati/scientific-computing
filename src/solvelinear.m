@@ -16,16 +16,16 @@ results = [
     -10;
 ];
 
-disp("\nUsing linsolve...");
+disp('\nUsing linsolve...');
 x = linsolve(coeffs, results);
-printf("x = %.2f\ny = %.2f\nz = %.2f\n", x(1), x(2), x(3));
+printf('x = %.2f\ny = %.2f\nz = %.2f\n', x(1), x(2), x(3));
 
-disp("\nUsing \\...");
+disp('\nUsing \\...');
 x = coeffs \ results;
-printf("x = %.2f\ny = %.2f\nz = %.2f\n", x(1), x(2), x(3));
+printf('x = %.2f\ny = %.2f\nz = %.2f\n', x(1), x(2), x(3));
 
-disp("\nUsing inv...");
+disp('\nUsing inv...');
 x = inv(coeffs) * results;
-printf("x = %.2f\ny = %.2f\nz = %.2f\n", x(1), x(2), x(3));
+printf('x = %.2f\ny = %.2f\nz = %.2f\n', x(1), x(2), x(3));
 
 % end of solvelinear.m

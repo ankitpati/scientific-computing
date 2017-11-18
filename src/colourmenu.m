@@ -4,14 +4,14 @@
 % Date  : 26 August 2017
 % Author: Ankit Pati
 
-colours = {"Red", "Green", "Blue", "Black"};
+colours = {'Red', 'Green', 'Blue', 'Black'};
 
-choice = menu("Choose a Colour", colours);
+choice = menu('Choose a Colour', colours);
 
 if choice != 0
-    printf("Chosen colour is %s.\n", colours{choice});
+    printf('Chosen colour is %s.\n', colours{choice});
 else
-    disp("No colour chosen.");
+    disp('No colour chosen.');
 end
 
 % end of colourmenu.m

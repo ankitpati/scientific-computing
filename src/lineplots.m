@@ -22,6 +22,6 @@ plot(x, 13 .* x +  4, 'linewidth', 2, '-.k', 'DisplayName', '5');
 legend('show');
 
 drawnow();
-input("Press enter key to terminate...");
+input('Press enter key to terminate...');
 
 % end of lineplots.m

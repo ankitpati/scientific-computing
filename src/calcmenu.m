@@ -4,30 +4,30 @@
 % Date  : 28 October 2017
 % Author: Ankit Pati
 
-num1 = input("Enter num1: ");
-num2 = input("Enter num2: ");
+num1 = input('Enter num1: ');
+num2 = input('Enter num2: ');
 
-operations = {"Addition", "Subtraction", "Multiplication", "Division"};
-choice = menu("Which Operation?", operations);
+operations = {'Addition', 'Subtraction', 'Multiplication', 'Division'};
+choice = menu('Which Operation?', operations);
 
 if choice != 0
     format long;
 
     switch operations{choice}
-    case "Addition"
+    case 'Addition'
         disp(num1 + num2);
-    case "Subtration"
+    case 'Subtration'
         disp(num1 - num2);
-    case "Multiplication"
+    case 'Multiplication'
         disp(num1 * num2);
-    case "Division"
+    case 'Division'
         disp(num1 / num2);
     otherwise
-        disp("Invalid operation");
+        disp('Invalid operation');
     end
 
 else
-    disp("No operation chosen.");
+    disp('No operation chosen.');
 
 end
 

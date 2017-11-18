@@ -8,7 +8,7 @@ function [fx expansion] = taylorseries(x, n)
 %     Examples:
 %
 %         [fx expansion] = taylorseries(5, 20);
-%         disp(["f(x) = " expansion " = " num2str(fx)]);
+%         disp(['f(x) = ' expansion ' = ' num2str(fx)]);
 %            => f(x) =  x - x³/3! + x⁵/5! - x⁷/7! + x⁹/9! - x¹¹/11! + x¹³/13!
 %                         - x¹⁵/15! + x¹⁷/17! - x¹⁹/19! + x²¹/21! - x²³/23!
 %                         + x²⁵/25! - x²⁷/27! + x²⁹/29! - x³¹/31! + x³³/33!

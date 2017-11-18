@@ -11,6 +11,6 @@ f = 2 ./ (x.^2 + y.^2 + 1);
 mesh(f);
 
 drawnow();
-input("Press enter key to terminate...");
+input('Press enter key to terminate...');
 
 % end of meshplot.m

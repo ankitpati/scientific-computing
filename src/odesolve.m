@@ -16,7 +16,7 @@ plot(t, y, 'linewidth', 2, '-b', 'DisplayName', '-2y');
 
 legend('show');
 drawnow();
-input("Press enter key to continue...");
+input('Press enter key to continue...');
 
 Y0 = [1; 1];
 [t y] = ode45(@odesample, linspace(0, 10), Y0);
@@ -24,6 +24,6 @@ plot(t, y, 'linewidth', 2, '-r', 'DisplayName', 'odesample');
 
 legend('show');
 drawnow();
-input("Press enter key to terminate...");
+input('Press enter key to terminate...');
 
 % end of odesolve.m

@@ -24,6 +24,6 @@ plot(t, f, 'color', 'green', 'linewidth', 2, 'DisplayName', 'f(t)');
 legend('show');
 
 drawnow();
-input("Press enter key to terminate...");
+input('Press enter key to terminate...');
 
 % end of sinplot.m

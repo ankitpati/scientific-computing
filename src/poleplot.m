@@ -19,6 +19,6 @@ polar(t, f, ';sin 4t;');
 legend('show');
 
 drawnow();
-input("Press enter key to terminate...");
+input('Press enter key to terminate...');
 
 % end of poleplot.m

@@ -28,6 +28,6 @@ line(x, y, 'linewidth', 2, 'color', 'yellow', 'linestyle', '--',
 legend('show');
 
 drawnow();
-input("Press enter to terminate...");
+input('Press enter to terminate...');
 
 % end of cmplxplot.m

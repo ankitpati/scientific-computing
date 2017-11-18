@@ -4,11 +4,11 @@
 % Date  : 28 October 2017
 % Author: Ankit Pati
 
-num = input("Enter a number: ", "s");
+num = input('Enter a number: ', 's');
 
 try
     if length(num) > 3
-        error("Number larger than 3 digits.");
+        error('Number larger than 3 digits.');
     end
 
     rev = fliplr(num);
