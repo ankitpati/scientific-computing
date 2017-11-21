@@ -38,7 +38,6 @@ switch choice
         disp('Blue colour is chosen.\n');
     case {'d' 'D' 'Done' 'done' 'DONE'}
         disp('Done!');
-        break;
     otherwise
         error('Invalid Selection');
 end
