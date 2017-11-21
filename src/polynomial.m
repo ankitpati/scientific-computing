@@ -9,7 +9,7 @@ q_ = [3, 4];            % q(s) = 3s + 4
 q  = [0, 0, 0, 3,  4];  % 0-pad to align with p
 
 val = polyval(p, 9);    % p(9)
-printf('p(s) at s = 9 is %.2f.\n\n', val);
+fprintf('p(s) at s = 9 is %.2f.\n\n', val);
 
 sum = p + q;
 disp('Sum = '), polyout(sum), disp('');

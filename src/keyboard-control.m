@@ -13,6 +13,6 @@ y = a / b;
 keyboard('Inspect y; set y to ten> ');
 
 z = a - y + 3;
-printf('Value of z is %d.\n', z);
+fprintf('Value of z is %d.\n', z);
 
 % end of keyboard-control.m

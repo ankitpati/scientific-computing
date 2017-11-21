@@ -8,7 +8,7 @@
 g = input('Gallons ? ');
 p = input('Pints   ? ');
 l = (g.*8 + p) / 1.76;
-printf('Liters  = %u\n', l);
+fprintf('Liters  = %u\n', l);
 %{
 Gallons ? 5
 Pints   ? 2
@@ -19,7 +19,7 @@ Liters  = 23.8636
 colours = {'Red', 'Green', 'Blue', 'Black'};
 choice = menu('Choose a Colour', colours);
 if choice != 0
-    printf('Chosen colour is %s.\n', colours{choice});
+    fprintf('Chosen colour is %s.\n', colours{choice});
 else
     disp('No colour chosen.');
 end
@@ -52,7 +52,7 @@ x = a + b;
 y = a / b;
 keyboard('Inspect y; set y to ten> ');
 z = a - y + 3;
-printf('Value of z is %d.\n', z);
+fprintf('Value of z is %d.\n', z);
 %{
 Value of z is 5.
 %}

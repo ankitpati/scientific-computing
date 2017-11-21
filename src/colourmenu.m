@@ -9,7 +9,7 @@ colours = {'Red', 'Green', 'Blue', 'Black'};
 choice = menu('Choose a Colour', colours);
 
 if choice != 0
-    printf('Chosen colour is %s.\n', colours{choice});
+    fprintf('Chosen colour is %s.\n', colours{choice});
 else
     disp('No colour chosen.');
 end

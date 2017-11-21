@@ -9,6 +9,6 @@ p = input('Pints   ? ');
 
 l = (g.*8 + p) / 1.76;
 
-printf('Liters  = %u\n', l);
+fprintf('Liters  = %u\n', l);
 
 % end of pint2liter.m
