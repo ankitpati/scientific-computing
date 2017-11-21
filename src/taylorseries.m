@@ -40,26 +40,16 @@ function [fx expansion] = taylorseries(x, n)
         p = '';
         for digit = power
             switch digit
-            case '0'
-                digit = '⁰';
-            case '1'
-                digit = '¹';
-            case '2'
-                digit = '²';
-            case '3'
-                digit = '³';
-            case '4'
-                digit = '⁴';
-            case '5'
-                digit = '⁵';
-            case '6'
-                digit = '⁶';
-            case '7'
-                digit = '⁷';
-            case '8'
-                digit = '⁸';
-            case '9'
-                digit = '⁹';
+            case '0' digit = '⁰';
+            case '1' digit = '¹';
+            case '2' digit = '²';
+            case '3' digit = '³';
+            case '4' digit = '⁴';
+            case '5' digit = '⁵';
+            case '6' digit = '⁶';
+            case '7' digit = '⁷';
+            case '8' digit = '⁸';
+            case '9' digit = '⁹';
             end
 
             p = strcat(p, digit);
