@@ -1,4 +1,4 @@
-function [Ydot] = odesample(t, Y)
+function Ydot = odesample(t, Y)
 % -- odesample(t, Y)
 %     Sample of an ODE to solve.
 
