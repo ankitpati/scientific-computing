@@ -19,7 +19,7 @@ drawnow();
 input('Press enter key to continue...');
 
 Y0 = [1; 1];
-[t y] = ode45(@odesample, linspace(0, 10), Y0);
+[t y] = ode23(@odesample, linspace(0, 10), Y0);
 plot(t, y, 'linewidth', 2, '-r', 'DisplayName', 'odesample');
 
 legend('show');
