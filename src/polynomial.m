@@ -35,7 +35,7 @@ int = polyint(q, 4);
 disp('Integral of q = '), polyout(int), disp('');
 
 rot = roots(p);
-disp('Roots of p = '), polyout(rot), disp('');
+disp('Roots of p = '), disp(rot), disp('');
 
 pwr = poly([-1, -2]);       % finds polynomial whose roots are in given array
 disp('Polynomial with roots -1, -2 = '), polyout(pwr), disp('');
