@@ -1,5 +1,5 @@
 function [Ydot] = odesample(t, Y)
-% -- odesample(x1, x2, u)
+% -- odesample(t, Y)
 %     Sample of an ODE to solve.
 
     A = [1 -2; -9 5];
