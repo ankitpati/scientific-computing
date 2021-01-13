@@ -1,4 +1,4 @@
-#!/usr/bin/octave -q
+#!/usr/bin/env -S octave -q
 
 % lineplots.m
 % Date  : 12 August 2017

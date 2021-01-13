@@ -1,4 +1,4 @@
-#!/usr/bin/octave -q
+#!/usr/bin/env -S octave -q
 
 % simulde.m
 % Date  : 21 November 2017

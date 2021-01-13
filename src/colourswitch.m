@@ -1,4 +1,4 @@
-#!/usr/bin/octave -q
+#!/usr/bin/env -S octave -q
 
 % colourswitch.m
 % Date  : 28 September 2017

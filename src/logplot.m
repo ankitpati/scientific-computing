@@ -1,4 +1,4 @@
-#!/usr/bin/octave -q
+#!/usr/bin/env -S octave -q
 
 % logplot.m
 % Date  : 16 September 2017
